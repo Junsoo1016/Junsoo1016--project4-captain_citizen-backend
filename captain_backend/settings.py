@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-ut(*g5ski^pswils6evt-@hil5$i-3fon%^-fkc-1qui#&!0il
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*','127.0.0.1', 'localhost', 'http://localhost:3000', 'https://captain-citizen-america.herokuapp.com']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -68,9 +68,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    '*',
-]
+CORS_ALLOWED_ORIGINS = ['*']
 
 ROOT_URLCONF = 'captain_backend.urls'
 
@@ -138,7 +136,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-
+CORS_ALLOW_ALL_ORIGINS = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
